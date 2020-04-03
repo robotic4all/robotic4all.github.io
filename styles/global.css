@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: Roboto;
+}
+
+nav {
+  top: 0vh;
+  position: fixed;
+  width: 100%;
+  height: 10vh;
+  background-color: #D24657;
+  display: flex;
+  flex-direction: row;
+}
+
+nav img{
+  margin-left: 5%;
+  width: 90px;
+}
+
+.items-menu{
+  display: flex;
+  list-style: none;
+  width: 50%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+}
+
+.items-menu li a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  margin-right: 30px;
+}
+
+.home{
+  background-image: url("../assets/team.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 100%;
+  height: 90vh;
+  margin-top: 10vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.home .title-home{
+  font-family: Lobster;
+  font-size: 52px;
+  color: white;
+  margin-bottom: 15px;
+}
+
+.home .phrase-home{
+  font-size: 23px;
+  color: white;
+  margin-bottom: 50px;
+}
+
+.home .btn-home{
+  height: 60px;
+  width: 200px;
+  background-color: rgba(0, 0, 0, 0);
+  border: 3px solid #D24657;
+  border-radius: 30px;
+  color: #D24657;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.home .btn-home:hover{
+  color: white;
+  border-color: white;
+}
+
+.about{
+  background-color: #CBCBCB;
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-about{
+  width: 70%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-about .title{
+  font-family: Lobster;
+  font-size: 48px;
+  padding-top: 10px;
+
+}
+
+.text-about  p{
+  font-size: 24px;
+  padding: 60px;
+  text-align: center;
+
+}
+
+.images-about{
+   width: 30%;
+   height: 100%;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   align-items: center;
+   padding: 20px;
+}
+
+.images-about img{
+  border: 2px solid black;
+  border-radius: 10px;
+  width: 250px;
+  height: 150px;
+  opacity: 1;
+}
+
+.images-about img:hover{
+  opacity: 0.5;
+}
+
+.robots{
+  background-color: #1C1B1B;
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+}
+
+.robots .title{
+    font-family: Lobster;
+  font-size: 48px;
+  padding-top: 10px;
+  color: white;
+}
+
+.team{
+  background-color: #CBCBCB;
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact{
+  background-color: #1C1B1B;
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 768px){
+  .line{
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    margin: 5px;
+  }
+
+  nav{
+    position: relative;
+  }
+
+  .icon-menu{
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 10%;
+    transform: translate(-5%, 50%);
+    z-index: 2;
+  }
+
+  .items-menu{
+    position: fixed;
+    background: #D24657;
+    color: white;
+    height: 100vh;
+    width: 100%;
+    flex-direction: column;
+    clip-path: circle(100pc at 90% -10%);
+    -webkit-clip-path: circle(100px at 90% -10%);
+    transition: all 1s ease-out;
+    pointer-events: none;
+    justify-content: space-around;
+  }
+  
+  .items-menu.open{
+    clip-path: circle(1000px at 90% -10%);
+    -webkit-clip-path: circle(1000px at 90% -10%);
+    pointer-events: all;
+  }
+
+  .items-menu li a {
+    font-size: 25px;
+  }
+
+  .home{
+    background-image: url("/assets/team-768.png");
+    margin-top: 0vh;
+  }
+  .about{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .text-about  p{
+    padding: 0px;
+    font-size: 18px;
+  }
+
+  .images-about{
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+  }
+  .images-about img + img{
+    display: none;
+  }
+
+}
