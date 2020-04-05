@@ -16,11 +16,11 @@
 }
 
 .gallery .gallery-body{
+  padding: 50px;
   position: relative;
   width: 100%;
   height: 100%;
-  margin: auto;
-  padding: 45px 0;
+  margin: 15px;
   display: grid;
   grid-template-columns: auto auto auto auto;
   grid-gap: 2vh;

@@ -11,4 +11,116 @@
 .projects h1{
   font-family: Lobster;
   color: white;
+  margin-top: 150px;
+}
+
+.projects .cards{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.projects .cards .card{
+  position: relative;
+  margin-right: 50px;
+}
+
+.projects .cards .card .face{
+  width: 300px;
+  height: 300px;
+  transition: 0.5s;
+} 
+
+.projects .cards .card .face1{
+  position: relative;
+  z-index: 1;
+  transform: translateY( 100px);
+}
+
+.projects .cards .card:hover .face1{
+  transform: translateY(0px);
+}
+
+.projects .cards .card .face1 img{
+  height: 100%;
+  width: 100%;
+  filter: brightness(0.6) grayscale(80);
+}
+
+.projects .cards .card:hover .face1 img{
+  filter: brightness(1) grayscale(0);
+}
+
+.projects .cards .card .face2{
+  height: 150px;
+  position: relative;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+  box-shadow: 0 20px 50px rgba(0, 0 ,0, 0.8);
+  transform: translateY(-100px);
+}
+
+.projects .cards .card:hover .face2{
+  transform: translateY(0px);
+  
+}
+
+.projects .cards .card .face2 .content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.projects .cards .card .face2 .content h2{
+  font-family: Roboto;
+  font-weight: bold;
+  font-size: 24px;
+  letter-spacing: 0;
+  text-align: center;
+  color: black;
+  margin-bottom: 5px;
+}
+
+.projects .cards .card .face2 .content span{
+  color: #D24657;
+  font-size: 18px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.projects .cards .card .face2 .content a{
+  text-decoration: none;
+  text-align: center;
+  border: 2px solid rgba(0, 0 ,0, 0.8);
+  color: black;
+}
+
+.projects .cards .card .face2 .content a:hover{
+  color: #D24657;
+  border-color: #D24657;
+}
+
+@media screen and (max-width: 768px){
+  .projects .cards{
+    flex-direction: column;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  .projects .cards .card{
+    margin-bottom: -100px;
+    margin-top: -20px;
+    margin-right: 0px;
+  }
+  .projects .cards .card + .card{
+    margin-bottom: -10px;
+  }
+  .projects .cards .card .face{
+    width: 200px;
+    height: 200px;
+  }
 }

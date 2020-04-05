@@ -9,14 +9,13 @@
 }
 
 .socialMedia h2{
-  font-size: 48px;
+  font-size: 36px;
   font-family: Lobster;
   color: #fff;
 }
 
 .socialMedia span{
   color: #fff;
-  margin-top: 20px;
   font-size: 18px;
 }
 
@@ -28,8 +27,6 @@
   margin-top: 40px;
 }
 
-.icon{
-}
 
 
 .icons img{
@@ -38,7 +35,9 @@
   padding: 20px;
   width: 150px;
   margin-right: 40px;
-  transition: 1s;
+  transition: 0.5s;
+  box-shadow: 0 20px 50px rgba(0, 0 ,0, 0.8);
+
 }
 
 .icons img:hover{
@@ -46,8 +45,15 @@
 }
 
 @media screen and (max-width: 768px ){
+  .socialMedia h2{
+    margin-bottom: 0px;
+    text-align: center;
+  }
   .socialMedia span{
     font-size: 12px;
+    padding: 30px;
+    margin-top: 0px;
+    text-align: center;
   }
   .icons{
     flex-direction: column;

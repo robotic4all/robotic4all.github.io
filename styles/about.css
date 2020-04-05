@@ -1,6 +1,6 @@
 
 .about{
-   width: 100vw;
+  width: 100vw;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -8,8 +8,6 @@
   align-items: center;
 }
 
-
-/* This container is needed to position the front and back side */
 .about-body{
   width: 700px;
   height: 450px;
@@ -18,12 +16,10 @@
   transform-style: preserve-3d;
 }
 
-/* Do an horizontal flip when you move the mouse over the flip box container */
 .about:hover .about-body {
   transform: rotateY(180deg);
 }
 
-/* Position the front and back side */
 .front, .back {
   position: absolute;
   width: 100%;
@@ -31,7 +27,6 @@
   -webkit-backface-visibility: hidden; /* Safari */
   backface-visibility: hidden;
 }
-
 
 .front img{
   width: 100%;
@@ -54,30 +49,36 @@
   align-items: center;
 }
 
-.back h2{
+h2{
   font-family: Lobster;
   font-size: 48px;
   letter-spacing: 6px;
+  color: #fff;
+  margin-bottom: 20px;
 }
 
 .back p{
   padding: 15px;
-  margin-top: 15px;
   font-size: 24px;
   text-align: center;
 }
 
+.back span{
+  font-weight: bold;
+  color: #D24657;
+}
+
 @media screen and (max-width: 768px){
   .about-body{
-    width: 480px;
-    height: 320px;
+    width: 320px;
+    height: 180px;
   }
 
-  .back h2{
-    font-size: 48px;
+  h2{
+    font-size: 26px;
   }
 
   .back p{
-    font-size: 16px;
+    font-size: 12px;
   }
 }
