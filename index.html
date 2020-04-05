@@ -1,60 +1,231 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="./styles/global.css">
-  <link type=""/>
-  <title>Robotic4All</title>
-</head>
-<body>
-  <nav>
-    <img src="/assets/logowhite.svg" alt="robotic4all" />
+  <head>
+    <title>ROBOTIC4ALL</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <link rel="stylesheet" type="text/css" href="./styles/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="./styles/global.css">
+    <link rel="stylesheet" type="text/css" href="./styles/nav.css">
+    <link rel="stylesheet" type="text/css" href="./styles/home.css">
+    <link rel="stylesheet" type="text/css" href="./styles/about.css">
+    <link rel="stylesheet" type="text/css" href="./styles/projects.css">
+    <link rel="stylesheet" type="text/css" href="./styles/teamCard.css">
+    <link rel="stylesheet" type="text/css" href="./styles/gallery.css">
+    <link rel="stylesheet" type="text/css" href="./styles/socialMedia.css">
+  </head>
+  <body>
+    <nav>
+      <div class="menu-item">
+        <a href="#home"><img src="./assets/navBarIcons/homeRed.svg" alt="Home"></a>
+      </div>
+      <div class="menu-item">
+        <a href="#about"><img src="./assets/navBarIcons/aboutRed.svg" alt="Sobre"></a>
+      </div>
+      <div class="menu-item">
+        <a href="#projects"><img src="./assets/navBarIcons/projectsRed.svg" alt="Projetos"></a>
+      </div>
+      <div class="menu-item">
+        <a href="#team"><img src="./assets/navBarIcons/teamRed.svg" alt="Equipe"></a>
+      </div>
+      <div class="menu-item">
+        <a href="#gallery"><img src="./assets/navBarIcons/galleryRed.svg" alt="Equipe"></a>
+      </div>
+      <div class="menu-item">
+        <a href="#socialMedia"><img src="./assets/navBarIcons/contactRed.svg" alt="Contato"></a>
+      </div>
+    </nav>
+    <div class="body">
+      <!-- Add Pagination -->
+      <section id="home" class="home">
+        <ul id="scene">
+          <li class="layer" data-depth=".1"><img src="./assets/home/title.png"></li>
+          <li class="layer" data-depth="0.3"><img src="./assets/home/subtitle.png"></li>
+          <li class="layer" data-depth="-1"><img src="./assets/home/moon.png"></li>
+          <li class="layer" data-depth="2"><img src="./assets/home/austin.png"></li>
+          <li class="layer" data-depth="0.5"><img src="./assets/home/rocket.png"></li>
+          <li class="layer" data-depth="0.43"><img src="./assets/home/robot.png"></li>
+        </ul>
+      </section>
 
-    <div class="icon-menu">
-      <div class="line"></div>
-      <div class="line"></div>
-      <div class="line"></div>
+      <section id="about" class="about">
+          <div class="about-body">
+            <div class="card middle">
+              <div class="front">
+                <img src="./assets/about/team.jpg" alt="robotic4all">
+              </div>
+              <div class="back">
+                <div class="back-body">
+                  <h2>sobre nós</h2>
+                  <p>
+                    Somos uma equipe de robótica que busca se divertir construindo robôs.
+                    Começamos nossos trabalhos no inicio de 2017, onde só contávamos com 2 membros, com o tempo nossa equipe
+                    cresceu
+                    e hoje
+                    já temos 6 membros e muito conhecimento adquirido.
+                    A cada dia buscamos não só construir robôs e ganhar competições, mas também buscar conhecimento e aprender a
+                    cada dia
+                    com nossas experiencias.
+                    Até o momento nós construímos robôs para dois tipos de categoria: Seguidor de Linha Pro e Sumô(500g).
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+      </section>
+
+      <section id="projects" class="projects">
+        <h1>projects</h1>
+      </section>
+      
+      <section id="team" class="team">
+        <div class="title">
+          <span class="text1">team</span>
+        </div>
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="imgBx">
+                <img src="./assets/team/beatriz.png" />
+              </div>
+              <div class="details">
+                <h3>Beatriz Pavão<br><span>3D Modeling and Management</span></h3>
+              </div>
+              <div class="social-media">
+                <a href="https://www.facebook.com/beatriz.pavao.35"><img src="./assets/socialMedia/facebook.svg"></a>
+                <a href="https://www.instagram.com/biapavao08/"><img src="./assets/socialMedia/instagram.svg"></a>
+                <a href="https://www.linkedin.com/in/beatriz-pavao/"><img src="./assets/socialMedia/linkedin.svg"></a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="imgBx">
+                <img src="./assets/team/evandro.png" />
+              </div>
+              <div class="details">
+                <h3>Evandro M. Munhoz<br>
+                  <span>Mechanics and Electronic</span>
+                </h3>
+              </div>
+              <div class="social-media">
+                <a href="https://www.facebook.com/munhozevandro"><img src="./assets/socialMedia/facebook.svg"></a>
+                <a href="https://www.instagram.com/evandromunhoz/""><img src=" ./assets/socialMedia/instagram.svg"></a>
+                <a href="https://www.linkedin.com/in/evandro-magalh%C3%A3es-munhoz-0369611a2/"><img
+                    src="./assets/socialMedia/linkedin.svg"></a>
+                <a href="https://github.com/munhozevandro"><img src="./assets/socialMedia/github.svg"></a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="imgBx">
+                <img src="./assets/team/gabriel.png" />
+              </div>
+              <div class="details">
+                <h3>Gabriel de P. Lopes<br>
+                  <span>Mechanics and Electronic</span>
+                </h3>
+              </div>
+              <div class="social-media">
+                <a href="https://www.facebook.com/gabriel.proencalopes"><img src="./assets/socialMedia/facebook.svg"></a>
+                <a href="https://www.instagram.com/gabrielopes12/""><img src=" ./assets/socialMedia/instagram.svg"></a>
+                <a href="https://www.linkedin.com/in/gabriel-de-proen%C3%A7a-lopes-750848197/"><img
+                    src="./assets/socialMedia/linkedin.svg"></a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="imgBx">
+                <img src="./assets/team/messias.png" />
+              </div>
+              <div class="details">
+                <h3>J. V. Messias Romagnoli <br>
+                  <span>Chief Electronic</span>
+                </h3>
+              </div>
+              <div class="social-media">
+                <a href="https://www.facebook.com/joaovictor.messiasromagnoli"><img
+                    src="./assets/socialMedia/facebook.svg"></a>
+                <a href="https://www.instagram.com/messiasromagnoli/""><img src=" ./assets/socialMedia/instagram.svg"></a>
+                <a href="https://www.linkedin.com/in/jo%C3%A3o-victor-romagnoli-a645371a0/"><img
+                    src="./assets/socialMedia/linkedin.svg"></a>
+                <a href="https://github.com/jovimessias"><img src="./assets/socialMedia/github.svg"></a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="imgBx">
+                <img src="./assets/team/luciano.png" />
+              </div>
+              <div class="details">
+                <h3>Luciano W. da Silva<br>
+                  <span>Captain and Programmer</span>
+                </h3>
+              </div>
+              <div class="social-media">
+                <a href="https://www.facebook.com/luciano.weslen11"><img src="./assets/socialMedia/facebook.svg"></a>
+                <a href="https://www.instagram.com/lucianoweslen11/""><img src=" ./assets/socialMedia/instagram.svg"></a>
+                <a href="https://www.linkedin.com/in/lucianoweslen11/"><img src="./assets/socialMedia/linkedin.svg"></a>
+                <a href="https://github.com/lucianoweslen11"><img src="./assets/socialMedia/github.svg"></a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="imgBx">
+                <img src="./assets/team/william.png" />
+              </div>
+              <div class="details">
+                <h3>William de P. Branco<br>
+                  <span>Chief Mechanics</span>
+                </h3>
+              </div>
+              <div class="social-media">
+                <a href="https://www.facebook.com/william.depaulabranco"><img src="./assets/socialMedia/facebook.svg"></a>
+                <a href="https://www.instagram.com/will_branco/""><img src=" ./assets/socialMedia/instagram.svg"></a>
+              </div>
+            </div>
+          </div>
+         
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+
+      <section id="gallery" class="gallery">
+        <div class="gallery-body">
+          <div class="img">
+            <img src="./assets/gallery/1.jpg">
+          </div>
+          <div class="img">
+            <img src="./assets/gallery/2.jpg">
+          </div>
+          <div class="img">
+            <img src="./assets/gallery/3.jpg">
+          </div>
+          <div class="img">
+            <img src="./assets/gallery/4.png">
+          </div>
+          <div class="img">
+            <img src="./assets/gallery/5.jpg">
+          </div>
+          <div class="img">
+            <img src="./assets/gallery/6.jpg">
+          </div>
+          <div class="img">
+            <img src="./assets/gallery/7.jpg">
+          </div>
+          <div class="img">
+            <img src="./assets/gallery/8.jpg">
+          </div>
+        </div>
+      </section>
+
+      <section id="socialMedia" class="socialMedia">
+        <h2>redes sociais</h2>
+        <span>entre em contato caso tenha alguuma dúvida ou queira trocar uma ideia</span>
+        <div class="icons">
+            <a href="https://www.facebook.com/gabriel.proencalopes"><img src="./assets/socialMedia/facebook.svg"></a>
+            <a href="https://www.instagram.com/gabrielopes12/""><img src=" ./assets/socialMedia/instagram.svg"></a>
+            <a href="https://www.github.com/robotic4all"><img src="./assets/socialMedia/github.svg"></a>
+        </div>
+      </section>
     </div>
-    <ul class="items-menu"> 
-      <li><a href="#home">home</a></li>
-      <li><a href="#about">sobre</a></li>
-      <li><a href="#robots">robôs</a></li>
-      <li><a href="#team">equipe</a></li>
-      <li><a href="#contact">contato</a></li>
-    </ul>
-  </nav>
-  
-  <section id="home" class="home">
-    <span class="title-home">equipe, amigos, familia</span>
-    <p class="phrase-home">desde de 2017 se divertindo construindo robõs</p>
-    <button href="#" class="btn-home">saber mais</button>
-  </section>
-  <section id="about" class="about">
-    <div class="text-about">
-      <span class="title">sobre</span>
-      <p>Somos uma equipe de robótica que busca se divertir construindo robôs.
-      Começamos nossos trabalhos no inicio de 2017, onde só contávamos com 2 membros, com o tempo nossa equipe cresceu e hoje
-      já temos 6 membros e muito conhecimento adquirido.
-      A cada dia buscamos não só construir robôs e ganhar competições, mas também buscar conhecimento e aprender a cada dia
-      com nossas experiencias.
-      Até o momento nós construímos robôs para dois tipos de categoria: Seguidor de Linha Pro e Sumô(500g).</p>
-    </div>
-    <div class="images-about">
-      <img src="/assets/about1.jpg" alt="R4A"/>
-      <img src="/assets/about2.jpg" alt="R4A" />
-      <img src="/assets/about3.jpg" alt="R4A" />
-    </div>
-  </section>
-  <section id="robots" class="robots">
-    <span class="title">Robôs</span>
-  </section>
-  <section id="team" class="team">
-  
-  </section>
-  <section id="contact" class="contact">
-  
-  </section>
-  <script src="./scripts/app.js"></script>
-</body>
+    <script type="text/javascript" src="./scripts/parallax.js"></script>
+    <script type="text/javascript" src="./scripts/swiper.min.js"></script>
+    <script type="text/javascript" src="./scripts/teamCard.js"></script>
+    <script type="text/javascript" src="./scripts/home.js"></script>
+  </body>
 </html>

@@ -1,0 +1,17 @@
+.home{
+  width: 100vw;
+  height: 100%;
+  background-color: #D24657;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+	background: url('/assets/home/backdound.png');
+  background-attachment: fixed;
+}
+
+.mixBlnd{
+  width: 100%;
+  height: 100%;
+	background-blend-mode: screen;
+}

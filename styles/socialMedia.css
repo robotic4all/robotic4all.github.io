@@ -1,0 +1,60 @@
+.socialMedia{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #1C1B1B;
+}
+
+.socialMedia h2{
+  font-size: 48px;
+  font-family: Lobster;
+  color: #fff;
+}
+
+.socialMedia span{
+  color: #fff;
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+.icons{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.icon{
+}
+
+
+.icons img{
+  background-color: #131314;
+  border-radius: 16px;
+  padding: 20px;
+  width: 150px;
+  margin-right: 40px;
+  transition: 1s;
+}
+
+.icons img:hover{
+  background-color: #fff;
+}
+
+@media screen and (max-width: 768px ){
+  .socialMedia span{
+    font-size: 12px;
+  }
+  .icons{
+    flex-direction: column;
+  }
+  .icons img {
+    width: 100px;
+    height: 100px;
+  }
+
+}

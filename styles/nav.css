@@ -1,0 +1,40 @@
+nav{
+  z-index: 100;
+  position: fixed;
+  background-color: #141313;
+  width: 5vw;
+  height: 100vh;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.menu-item{
+  width: auto;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-item img{
+  width: 30px;
+  opacity: 1;
+}
+
+.menu-item img:hover{
+  opacity: 0.5;
+}
+
+@media screen and (max-width: 768px){
+  nav{
+    width: 100vw;
+    height: 10vh;
+    bottom: 0;
+    flex-direction: row;
+  }
+}
